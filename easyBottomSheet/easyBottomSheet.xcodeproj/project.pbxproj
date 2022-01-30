@@ -13,6 +13,8 @@
 		3661B0F527A73B5400F4CFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3661B0F327A73B5400F4CFC1 /* Main.storyboard */; };
 		3661B0F727A73B5500F4CFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3661B0F627A73B5500F4CFC1 /* Assets.xcassets */; };
 		3661B0FA27A73B5500F4CFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3661B0F827A73B5500F4CFC1 /* LaunchScreen.storyboard */; };
+		3661B10227A743AA00F4CFC1 /* GenderSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3661B10127A743AA00F4CFC1 /* GenderSheetView.swift */; };
+		3661B10427A743B600F4CFC1 /* GenderSheetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3661B10327A743B600F4CFC1 /* GenderSheetView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3661B0F627A73B5500F4CFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3661B0F927A73B5500F4CFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3661B0FB27A73B5500F4CFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3661B10127A743AA00F4CFC1 /* GenderSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderSheetView.swift; sourceTree = "<group>"; };
+		3661B10327A743B600F4CFC1 /* GenderSheetView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenderSheetView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				3661B0ED27A73B5400F4CFC1 /* AppDelegate.swift */,
 				3661B0EF27A73B5400F4CFC1 /* SceneDelegate.swift */,
 				3661B0F127A73B5400F4CFC1 /* ViewController.swift */,
+				3661B10127A743AA00F4CFC1 /* GenderSheetView.swift */,
+				3661B10327A743B600F4CFC1 /* GenderSheetView.xib */,
 				3661B0F327A73B5400F4CFC1 /* Main.storyboard */,
 				3661B0F627A73B5500F4CFC1 /* Assets.xcassets */,
 				3661B0F827A73B5500F4CFC1 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3661B0FA27A73B5500F4CFC1 /* LaunchScreen.storyboard in Resources */,
+				3661B10427A743B600F4CFC1 /* GenderSheetView.xib in Resources */,
 				3661B0F727A73B5500F4CFC1 /* Assets.xcassets in Resources */,
 				3661B0F527A73B5400F4CFC1 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3661B0F227A73B5400F4CFC1 /* ViewController.swift in Sources */,
+				3661B10227A743AA00F4CFC1 /* GenderSheetView.swift in Sources */,
 				3661B0EE27A73B5400F4CFC1 /* AppDelegate.swift in Sources */,
 				3661B0F027A73B5400F4CFC1 /* SceneDelegate.swift in Sources */,
 			);
