@@ -13,22 +13,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
-        
     }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+    
+    @IBAction func showSheet(_ sender: Any) {
+        DispatchQueue.main.async {
             self.showGenderSheet()
         }
     }
     
     private func showGenderSheet() {
-        view.endEditing(true)
         genderSheet = getInstanceFromGenderSheet()
-        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
-        navigationController?.view.addSubview(genderSheet)
+        view.addSubview(genderSheet)
         setupGenderSheetConstraints()
         genderSheet.didDismiss = {[weak self] in
             self?.genderSheet.removeFromSuperview()
@@ -44,8 +39,8 @@ class ViewController: UIViewController {
     private func setupGenderSheetConstraints() {
         genderSheet.translatesAutoresizingMaskIntoConstraints = false
         genderSheet.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        genderSheet.leftAnchor.constraint(equalTo: view.readableContentGuide.leftAnchor).isActive = true
-        genderSheet.rightAnchor.constraint(equalTo: view.readableContentGuide.rightAnchor).isActive = true
+        genderSheet.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        genderSheet.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         genderSheet.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
 }

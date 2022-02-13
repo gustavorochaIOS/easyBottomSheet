@@ -18,11 +18,11 @@ class GenderSheetView: UIView {
         animatetUI(true)
     }
     
-    private func animatetUI(_ isPresent: Bool = false) {
-        self.tag = 01
+    private func animatetUI(_ isPresent: Bool = false, bottomHeight: CGFloat = 0) {
+        self.tag = 1
         UIView.animate(withDuration: 0.25) {
             self.backgroundColor = UIColor.black.withAlphaComponent(isPresent ? 0.7 : 0)
-            self.constBottomHeight.constant = isPresent ? 0 : -300
+            self.constBottomHeight.constant = isPresent ? 0 : bottomHeight
             self.layoutIfNeeded()
         } completion: {_ in
             if !isPresent {
@@ -33,7 +33,7 @@ class GenderSheetView: UIView {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            if touch.view?.tag == 01 {
+            if touch.view?.tag == 1 {
                 animatetUI()
             }
         }
