@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCk-kJ-fLU">
-                    <rect key="frame" x="0.0" y="506" width="375" height="161"/>
+                    <rect key="frame" x="0.0" y="806" width="375" height="161"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ub4-ES-WiB">
                             <rect key="frame" x="25" y="25" width="325" height="111"/>
@@ -127,10 +127,10 @@
             <constraints>
                 <constraint firstItem="SCk-kJ-fLU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EmJ-8M-qHv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SCk-kJ-fLU" secondAttribute="trailing" id="NZx-18-bmb"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SCk-kJ-fLU" secondAttribute="bottom" id="hEe-Vg-JZz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SCk-kJ-fLU" secondAttribute="bottom" constant="-300" id="hEe-Vg-JZz"/>
             </constraints>
             <connections>
-                <outlet property="constBottomHeight" destination="C4v-kA-ux5" id="bUk-yA-4j5"/>
+                <outlet property="constBottomHeight" destination="hEe-Vg-JZz" id="1AA-uF-SZX"/>
             </connections>
             <point key="canvasLocation" x="139" y="125"/>
         </view>

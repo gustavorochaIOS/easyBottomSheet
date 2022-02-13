@@ -18,11 +18,11 @@ class GenderSheetView: UIView {
         animatetUI(true)
     }
     
-    private func animatetUI(_ isPresent: Bool = false, bottomHeight: CGFloat = 0) {
+    private func animatetUI(_ isPresent: Bool = false) {
         self.tag = 1
         UIView.animate(withDuration: 0.25) {
             self.backgroundColor = UIColor.black.withAlphaComponent(isPresent ? 0.7 : 0)
-            self.constBottomHeight.constant = isPresent ? 0 : bottomHeight
+            self.constBottomHeight.constant = isPresent ? 0 : -300
             self.layoutIfNeeded()
         } completion: {_ in
             if !isPresent {
